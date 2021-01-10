@@ -1,0 +1,35 @@
+@font-face {
+    font-family: Inter;
+    src: url("fonts/Inter-Regular.ttf") format("ttf");
+}
+
+body {
+    background-color: #EFBA4C;
+}
+
+h1.heading > p {
+    font-family: Inter;
+    display: block;
+    color: #D54534;
+    text-align: center;
+}
+
+h1.heading {
+    font-family: Inter;
+    display: block;
+    color: #2B549A;
+    text-align: center;
+}
+
+.top-half {
+    width: 100%;
+    height: 50%;
+    background-color: #ffff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
