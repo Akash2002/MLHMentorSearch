@@ -3,6 +3,21 @@
     src: url("fonts/Inter-Regular.ttf") format("ttf");
 }
 
+
+.top-half {
+    width: 100%;
+    height: 50%;
+    background-color: #FAFAFF;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 body {
     background-color: #EFBA4C;
 }
@@ -21,25 +36,34 @@ h1.heading {
     text-align: center;
 }
 
-.top-half {
-    width: 100%;
-    height: 50%;
-    background-color: #ffff;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    z-index: 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .bottom-half {
     display: grid;
     position: absolute;
     top: 50%;
     padding: 5%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 3em;
     color: black
+}
+
+.bottom-half > div {
+    background-color: #2B549A;
+    padding: 5%;
+}
+
+.hack-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Inter;
+    color: #FAFAFF;
+}
+
+a {
+    color:#EFBA4C;
+    text-transform: uppercase;
+    text-decoration: none;
 }
